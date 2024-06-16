@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    justify-content: center; 
+}
+
+/* Image + Odin logo and text*/
+.image-container {
+    position: flex;
+    align-items: center;
+    height: 100vh;
+    width: 500px;
+}
+
+
+.background-image {
+    display: inline-block;
+    height: 100vh;
+    width: 500px;
+}
+
+.transparent-background {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    opacity: 50%;
+    top: 50%;
+    width: 500px;
+    height: 100px;
+}
+
+.odin-logo {
+    height: 100px;
+    width: auto;
+    margin-right: 30px;
+}
+
+.overlay-text {
+    color: white;
+    font-size: 32px;
+}
+
+/* Text, this should be to the right of the images */
+.text-container {
+    display: inline-block;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    padding: 40px;
+}
+
+.long-sentence {
+    font-size: 32px;
+    background-color: lightgray;
+    margin: 0%;
+    padding: 10px 40px;
+}
+
+.short-sentence {
+    font-size: 32px;
+    background-color: lightgray;
+    margin: 0%;
+    padding: 10px 40px 50px 40px;
+}
+
+.login-Info {
+    display: block;
+    height: auto;
+    width: auto;
+    padding: 10px;
+}
+
+.intro{
+    font-size: 32px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+    align-items: left;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.input-group label {
+    width: 100%;
+}
+
+.input-group input {
+    width: 50%;
+    
+}

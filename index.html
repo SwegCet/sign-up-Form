@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+        <div class="image-container"> 
+            <img src="leaves.jpg" alt="Leaves" class="background-image">
+            <div class="transparent-background">
+                <img src="odin-lined.png" alt="Odin logo" class="odin-logo"> 
+                <p class="overlay-text">ODIN</p>
+            </div>  
+        </div>
+
+        <div class="text-container">
+                <p class ="long-sentence"> This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br> Sign up now to get started. </p>
+                <p class = "short-sentence">You know you want to. </p>
+
+                <div class="login-Info">
+                    <p class="intro"> Let's do this!</p>
+                    <div class="info">
+                        <div class="input-group">
+                            <label for="first-name"> FIRST NAME </label>
+                            <input type="text" id="first_name" name="first_name" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="last-name"> LAST NAME </label>
+                            <input type="text" id="last_name" name="last_name" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">EMAIL </label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="Phone Number"> PHONE NUMBER </label>
+                            <input type="tel" id="phone_number" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="password"> PASSWORD </label>
+                            <input type="password" id="password" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="password_confirmation"> CONFIRM PASSWORD </label>
+                            <input type="password" id="password-confirmation" required>
+                        </div>
+                    </div>
+                </div>
+            <button type="button"> Create Account </button>
+
+            <div> 
+                <p> Already have an account? <span style="color:green; font-weight: bold;"> Log In </span></p>
+            </div> 
+        </div>
+</body>
+</html>
