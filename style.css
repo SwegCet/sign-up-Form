@@ -2,7 +2,8 @@ body {
     display: flex;
     justify-content: center;
     height: 100vh;
-    background-color: snow  ;
+    background-color: white;
+    margin: 0;
 }
 
 /* Image + Odin logo and text*/
@@ -48,19 +49,13 @@ body {
     justify-content: center;
     height: auto;
     width: auto;
-    padding: 0px;
 }
 
 .long-sentence {
     font-size: 32px;
-    margin: 0%;
-    padding: 80px 40px;
-}
-
-.short-sentence {
-    font-size: 32px;
-    margin: 0%;
-    padding: 10px 40px 50px 40px;
+    margin: 0;
+    padding: 80px 300px 80px 60px;
+    
 }
 
 .login-Info {
@@ -69,21 +64,21 @@ body {
     width: auto;
     box-shadow: 1px ;
     border: 1px solid lightgray;
+    background-color: #F7F7F7;
+    padding-left: 60px;
+    padding-bottom: 20px;
 }
 
 .intro{
     font-size: 32px;
     font-weight: bold;
-    padding: 10px;
     margin-bottom: 20px;
-    margin-left: 20px;
 }
 
 .info{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 30px;
     align-items: left;
 }
 
@@ -100,7 +95,7 @@ body {
 
 .input-group input {
     margin-bottom: 10px;
-    width: 70%;
+    width: 40%;
     padding: 10px;
     border-radius: 10px;
     border: 1;
@@ -113,13 +108,33 @@ button {
     border-radius: 10px;
     border: 0;
     font-weight: bold;
-    width: 300px;
-    margin: 10px;
+    width: 250px;
+    margin: 20px;
+    margin-left: 60px;
+    font-size: 18px;
 }
 
-.login {
+.text-footer {
     display: flex;
     padding: 10px;
     height: 40px;
     margin: 10px;
+    margin-left: 60px;
+}
+
+h1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+a.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: darkgreen;
+    margin: 0;
+    padding: 10px;
 }
