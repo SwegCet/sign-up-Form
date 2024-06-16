@@ -1,6 +1,8 @@
 body {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
+    height: 100vh;
+    background-color: snow  ;
 }
 
 /* Image + Odin logo and text*/
@@ -23,7 +25,7 @@ body {
     display: flex;
     justify-content: center;
     background-color: black;
-    opacity: 50%;
+    opacity: 60%;
     top: 50%;
     width: 500px;
     height: 100px;
@@ -46,19 +48,17 @@ body {
     justify-content: center;
     height: auto;
     width: auto;
-    padding: 40px;
+    padding: 0px;
 }
 
 .long-sentence {
     font-size: 32px;
-    background-color: lightgray;
     margin: 0%;
-    padding: 10px 40px;
+    padding: 80px 40px;
 }
 
 .short-sentence {
     font-size: 32px;
-    background-color: lightgray;
     margin: 0%;
     padding: 10px 40px 50px 40px;
 }
@@ -67,20 +67,23 @@ body {
     display: block;
     height: auto;
     width: auto;
-    padding: 10px;
+    box-shadow: 1px ;
+    border: 1px solid lightgray;
 }
 
 .intro{
     font-size: 32px;
+    font-weight: bold;
     padding: 10px;
     margin-bottom: 20px;
+    margin-left: 20px;
 }
 
 .info{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 10px;
+    margin: 30px;
     align-items: left;
 }
 
@@ -92,9 +95,31 @@ body {
 
 .input-group label {
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .input-group input {
-    width: 50%;
-    
+    margin-bottom: 10px;
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1;
+}
+
+button {
+    background-color: darkgreen;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0;
+    font-weight: bold;
+    width: 300px;
+    margin: 10px;
+}
+
+.login {
+    display: flex;
+    padding: 10px;
+    height: 40px;
+    margin: 10px;
 }
