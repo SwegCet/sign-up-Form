@@ -27,6 +27,10 @@ function minFirstName() {
         document.getElementById('firstNameError').style.color = 'red';
         document.getElementById('first_name').classList.add('error-border');
     }
+    else {
+        document.getElementById('firstNameError').innerHTML = '';
+        document.getElementById('first_name').classList.remove('error-border');
+    }
 }
 
 function minLastName() {
@@ -34,6 +38,10 @@ function minLastName() {
         document.getElementById('lastNameError').innerHTML = '*Last name must be atleast 3 characters!';
         document.getElementById('lastNameError').style.color = 'red';
         document.getElementById('last_name').classList.add('error-border');
+    }
+    else {
+        document.getElementById('lastNameError').innerHTML = '';
+        document.getElementById('last_name').classList.remove('error-border');
     }
 }
 

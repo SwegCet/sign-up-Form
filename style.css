@@ -17,14 +17,14 @@ body {
     position: flex;
     align-items: center;
     height: 100vh;
-    width: 600px;
+    width: 700px;
 }
 
 
 .background-image {
     display: inline-block;
     height: 100vh;
-    width: 600px;
+    width: 700px;
 }
 
 .transparent-background {
@@ -34,7 +34,7 @@ body {
     background-color: black;
     opacity: 60%;
     top: 50%;
-    width: 600px;
+    width: 700px;
     height: 100px;
 }
 
@@ -64,9 +64,9 @@ body {
 }
 
 .long-sentence {
-    font-size: 32px;
+    font-size: 28px;
     margin: 0;
-    padding: 80px 300px 80px 60px;
+    padding: 80px 400px 80px 60px;
     
 }
 
@@ -74,8 +74,8 @@ body {
     display: block;
     height: auto;
     width: auto;
-    box-shadow: 1px ;
-    border: 1px solid lightgray;
+    box-shadow: 10px 10px 8px lightgray;
+    border: 1px solid #E5E7EB;
     background-color: #E5E7EB;
     padding-left: 60px;
     padding-bottom: 20px;
@@ -111,6 +111,10 @@ body {
     padding: 10px;
     border-radius: 10px;
     border: 2px solid;
+}
+
+.input-group input:hover {
+    background-color: #B8E2F2;
 }
 
 .error-border {
