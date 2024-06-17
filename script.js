@@ -1,5 +1,5 @@
 
-/*Create a script that when clicked, checks if both password 
+/*Create a script that when input has invalid format , checks if both password 
 and confirmation is the same else outputs an error message 
 '* Passwords do not match' and changes the borders of the password/confirmation containers to red*/
 
