@@ -4,21 +4,27 @@ body {
     height: 100vh;
     background-color: white;
     margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/* to have a different font for the ODIN text */
+@font-face {
+    font-family: 'Norse Bold';
+    src: url('/Font/Norse-Bold.otf');
+}
 /* Image + Odin logo and text*/
 .image-container {
     position: flex;
     align-items: center;
     height: 100vh;
-    width: 500px;
+    width: 600px;
 }
 
 
 .background-image {
     display: inline-block;
     height: 100vh;
-    width: 500px;
+    width: 600px;
 }
 
 .transparent-background {
@@ -28,7 +34,7 @@ body {
     background-color: black;
     opacity: 60%;
     top: 50%;
-    width: 500px;
+    width: 600px;
     height: 100px;
 }
 
@@ -39,8 +45,13 @@ body {
 }
 
 .overlay-text {
+    display: flex;
     color: white;
-    font-size: 32px;
+    font-size: 100px;
+    margin: 0;
+    flex-direction: column;  
+    justify-content: center;
+    font-family: 'Norse Bold', Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Text, this should be to the right of the images */
@@ -64,7 +75,7 @@ body {
     width: auto;
     box-shadow: 1px ;
     border: 1px solid lightgray;
-    background-color: #F7F7F7;
+    background-color: #E5E7EB;
     padding-left: 60px;
     padding-bottom: 20px;
 }
@@ -98,11 +109,15 @@ body {
     width: 40%;
     padding: 10px;
     border-radius: 10px;
-    border: 1;
+    border: 2px solid;
+}
+
+.error-border {
+    border: 2px solid red !important;
 }
 
 button {
-    background-color: darkgreen;
+    background-color: #596D48;
     color: white;
     padding: 10px;
     border-radius: 10px;
@@ -120,6 +135,11 @@ button {
     height: 40px;
     margin: 10px;
     margin-left: 60px;
+}
+
+#passwordError {
+    color: red;
+    font-size: 12px;
 }
 
 h1 {

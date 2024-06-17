@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body> 
         <div class="image-container"> 
-            <img src="leaves.jpg" alt="Leaves" class="background-image">
+            <img src="images/leaves.jpg" alt="Leaves" class="background-image">
             <div class="transparent-background">
-                <img src="odin-lined.png" alt="Odin logo" class="odin-logo"> 
+                <img src="images/odin-lined.png" alt="Odin logo" class="odin-logo"> 
                 <p class="overlay-text">ODIN</p>
             </div>  
         </div>
@@ -29,32 +30,36 @@
                         <div class="info">
                             <div class="input-group">
                                 <label for="first-name"> FIRST NAME </label>
-                                <input type="text" id="first_name" name="first_name" required>
+                                <input type="text" id="first_name" name="first_name" required onkeyup="minFirstName()">
+                                <span id="firstNameError"></span>
                             </div>
                             <div class="input-group">
                                 <label for="last-name"> LAST NAME </label>
-                                <input type="text" id="last_name" name="last_name" required>
+                                <input type="text" id="last_name" name="last_name" required onkeyup="minLastName()">
+                                <span id="lastNameError"></span>
                             </div>
                             <div class="input-group">
                                 <label for="email">EMAIL </label>
-                                <input type="email" id="email" name="email" required>
+                                <input type="email" id="email" name="email" required onkeyup="emailFormat()">
+                                <span id="emailError"></span>
                             </div>
                             <div class="input-group">
                                 <label for="Phone Number"> PHONE NUMBER </label>
-                                <input type="tel" id="phone_number" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+                                <input type="tel" id="phone_number" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required onkeyup="phoneFormat()">
+                                <span id="phoneNumberError"></span>
                             </div>
                             <div class="input-group">
                                 <label for="password"> PASSWORD </label>
-                                <input type="password" id="password" required>
-                                <div class="error" id="passwordError"></div>
+                                <input type="password" id="password" required onkeyup="matchPass()">
+                                <span id="passwordError"></span>
                             </div>
                             <div class="input-group">
                                 <label for="password_confirmation"> CONFIRM PASSWORD </label>
-                                <input type="password" id="password-confirmation" required>
+                                <input type="password" id="password-confirmation" required onkeyup="matchPass()">
                             </div>
                         </div>
                 </div>
-                <button class ="button" type="submit"> Create Account </button>
+                <button id="button" type="submit"> Create Account </button>
                 </form>
             <div class="text-footer"> 
                 <h1> 
